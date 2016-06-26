@@ -96,6 +96,9 @@ ifeq (pa_scorpion_windy,$(TARGET_PRODUCT))
 endif
 
 # Sony Kitakami platform
+ifeq (pa_sumire,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/sumire/pa_sumire.mk
+endif
 ifeq (pa_ivy,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/ivy/pa_ivy.mk
 endif
